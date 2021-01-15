@@ -1,0 +1,15 @@
+#-------------------------------------------------------------
+# Simpliest Manifest File to create Pod with one Container
+#
+# Copyleft (c) by Skiba evgeniy 2020
+#-------------------------------------------------------------
+apiVersion : v1
+kind: Pod
+metadata:
+  name: hello
+spec:
+  containers:
+    - name : container-spring
+      image: sevad/springh2k8s
+      ports:
+        - containerPort: 8000
