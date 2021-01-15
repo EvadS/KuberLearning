@@ -6,7 +6,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: my-spring-web
+  name: my-spring-web-and-tomcat
   labels:
     env  : prod
     app  : main
@@ -15,7 +15,12 @@ metadata:
 spec:
   containers:
     - name: container-spring
-      image: sevad/springh2k8s
+      image: sevad/spring-h2-rest:v1.0.1
       ports:
         - containerPort: 8000
+
+    - name: container-tomcat
+      image: tomcat:8.5.38
+      ports:
+        - containerPort: 8080
 
