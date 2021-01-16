@@ -26,8 +26,16 @@ kubectl describe deployment evad-deployment
 ```bash
 kubectl scale deployment evad-deployment  --replicas 4 
 ```
-
 в результате будет создана реплика 
 ```bash
     kubectl get rs
+```
+---
+## удалить 
+```bash
+  kubectl delete deploy my-web-deployment
+``
+--
+```bash 
+kubectl apply -f https://raw.githubusercontent.com/EvadS/KuberLearning/main/Step_5_deployments/deployment-1-simple.yaml
 ```
