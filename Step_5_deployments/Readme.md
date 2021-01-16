@@ -39,3 +39,21 @@ kubectl scale deployment evad-deployment  --replicas 4
 ```bash 
 kubectl apply -f https://raw.githubusercontent.com/EvadS/KuberLearning/main/Step_5_deployments/deployment-1-simple.yaml
 ```
+
+--
+```bash
+kubectl apply -f https://raw.githubusercontent.com/EvadS/KuberLearning/main/Step_5_deployments/deployment-2-replicas.yaml
+
+```
+
+смотрим 
+```
+kubectl get pods
+```
+
+3 реплики 
+
+--
+
+yaml's 
+
