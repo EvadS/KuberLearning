@@ -12,15 +12,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      project: kgb
+      project: my-proj
   template:
     metadata:
       labels:
-        project: kgb
+        project: my-proj
     spec:
       containers:
         - name : kgb-web
-          image: adv4000/k8sphp:latest
+          image: sevad/spring-h2-rest:v1.0.0
           ports:
-            - containerPort: 80
+            - containerPort: 8000
 

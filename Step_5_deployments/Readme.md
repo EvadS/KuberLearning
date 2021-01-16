@@ -6,3 +6,28 @@ Deployments
 ```bash 
  minikube start
 ```
+
+### создаем
+```bash
+kubectl create deployment evad-deployment --image sevad/spring-h2-rest:v1.0.0
+```
+depoyment создаст Pod
+
+### смотрим 
+```bash
+kubectl get deploy
+```
+
+```bash
+kubectl describe deployment evad-deployment
+```
+
+## Scaling 
+```bash
+kubectl scale deployment evad-deployment  --replicas 4 
+```
+
+в результате будет создана реплика 
+```bash
+    kubectl get rs
+```
