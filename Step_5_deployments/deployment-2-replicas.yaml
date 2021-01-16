@@ -23,6 +23,6 @@ spec:
     spec:
       containers:
         - name : cia-web
-          image: sevad/spring-h2-rest:v1.0.0
+          image: sevad/spring-h2-rest:v1.0.1
           ports:
-            - containerPort: 8000
+            - containerPort: 8001

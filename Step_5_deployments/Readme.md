@@ -42,13 +42,17 @@ kubectl apply -f https://raw.githubusercontent.com/EvadS/KuberLearning/main/Step
 
 --
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/EvadS/KuberLearning/main/Step_5_deployments/deployment-2-replicas.yaml
+ kubectl apply -f https://raw.githubusercontent.com/EvadS/KuberLearning/main/Step_5_deployments/deployment-2-replicas.yaml
 
 ```
 
 смотрим 
 ```
 kubectl get pods
+```
+
+```bash
+kubectl port-forward my-web-deployment-replicas-7478fc5cdb-v4ljq  18000:8000
 ```
 
 3 реплики 
