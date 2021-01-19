@@ -52,7 +52,7 @@ kubectl get pods
 ```
 
 ```bash
-kubectl port-forward my-web-deployment-replicas-7478fc5cdb-v4ljq  18000:8000
+kubectl port-forward my-web-deployment-replicas-56887b7cc7-rm5kd  18000:8000
 ```
 
 3 реплики 

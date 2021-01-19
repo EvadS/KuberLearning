@@ -26,15 +26,18 @@ docker login
 ```bash
    docker images 
 ```
-### удалить 
-```bash
-   docker rmi [IMAGE_ID] -f
-```
 
 ### Запустить локально чтобы чекнуть image
 ```bash 
  docker run -p 18001:8000 --name spring-h2-container sevad/spring-h2-rest:v1.0.1
 ```
+
+### удалить 
+```bash
+   docker rmi [IMAGE_ID] -f
+```
+
+
 
 ```bash 
  docker run -p 18001:8000 --name spring-h2-container sevad/spring-h2-rest:v1.0.1 up -d 
