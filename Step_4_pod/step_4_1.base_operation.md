@@ -13,7 +13,7 @@
 
 ## Создать под
 ```bash
-   kubectl run test-pod-name --generator=run.pod/v1 --image=sevad/spring-h2-rest:v1.0.0 --port=8001
+   kubectl run test-pod-name --generator=run.pod/v1 --image=sevad/spring-h2-rest:v1.0.0 --port=8000
 ```
 
 ## просмотреть инфу 
@@ -47,9 +47,14 @@
 
 ```
 kubectl port-forward test-pod-name 18000:8000
+
 ```
 8000 - внутненний 
 7788 - внешний
+
+test
+
+kubectl port-forward demo-54d568dc4f-ns7vz 18000:8000
 
 
 
