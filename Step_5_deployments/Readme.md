@@ -15,16 +15,16 @@ depoyment создаст Pod
 
 ### смотрим 
 ```bash
-kubectl get deploy
+ kubectl get deploy
 ```
 
 ```bash
-kubectl describe deployment evad-deployment
+ kubectl describe deployment evad-deployment
 ```
 
 ## Scaling 
 ```bash
-kubectl scale deployment evad-deployment  --replicas 4 
+ kubectl scale deployment evad-deployment  --replicas 4 
 ```
 в результате будет создана реплика 
 ```bash
